@@ -1,13 +1,11 @@
 .hero {
   //position: relative;
   padding: 0;
-  
- 
 }
 .hero__picture {
-  position:relative;
-  
-  background-image: url(../images/hero1@1X.png);
+  position: relative;
+
+  background-image: url(../images/hero@1X.png);
   background-color: #f2f2f2;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,7 +17,7 @@
   z-index: -4;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/hero1@2X.png);
+    background-image: url(../images/hero@2X.png);
   }
   @media screen and (min-width: 480px) {
     min-height: 250px;
@@ -42,30 +40,25 @@
   font-size: 15px;
   line-height: 1.2;
   font-weight: 400;
-  color:black;
-   @media screen and (min-width: 280px) {
-     left: 5%;
-     right:2%;
-
-    
+  color: black;
+  @media screen and (min-width: 280px) {
+    left: 5%;
+    right: 2%;
   }
   @media screen and (min-width: 480px) {
     top: 20px;
-    
+
     font-size: 24px;
   }
 
   @media screen and (min-width: 780px) {
     font-size: 33px;
     top: 60px;
-     
-    
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 48px;
     top: 99px;
-    
   }
 }
 
@@ -76,7 +69,7 @@
   font-weight: 400;
   color: #e84d0f;
   left: 32%;
-  bottom:10%;
+  bottom: 10%;
   width: 100px;
   height: 30px;
   background-color: #ffffff;
@@ -86,13 +79,11 @@
   @media screen and (min-width: 480px) {
     width: 150px;
     left: 37%;
-    
   }
   @media screen and (min-width: 780px) {
     width: 200px;
     height: 35px;
     left: 65%;
-  
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
@@ -101,7 +92,7 @@
     color: #e84d0f;
     left: 900px;
     right: 50px;
-   
+
     width: 237px;
     height: 46px;
   }
@@ -118,25 +109,23 @@
   left: 20%;
   right: 20%;
   z-index: 100;
- @media screen and (min-width: 280px) {
+  @media screen and (min-width: 280px) {
     top: 45px;
-     left: 5%;
-  right: 5%; 
- }
+    left: 5%;
+    right: 5%;
+  }
   @media screen and (min-width: 480px) {
     top: 70px;
-     left: 5%;
-  right: 5%;
+    left: 5%;
+    right: 5%;
   }
   @media screen and (min-width: 780px) {
     top: 150px;
-   
   }
   @media screen and (min-width: 1280px) {
-  left: 20%;
-  right: 20%;
-  top: 250px;
-    
+    left: 20%;
+    right: 20%;
+    top: 250px;
   }
 }
 
@@ -167,15 +156,15 @@
     line-height: 24px;
   }
 }
-.heroRelativ{
-  position:relative;
+.heroRelativ {
+  position: relative;
 }
 .embla__button {
   outline: 0;
   cursor: pointer;
   background-color: transparent;
   touch-action: manipulation;
- position: absolute;
+  position: absolute;
   z-index: 400;
   bottom: 13%;
   transform: translateY(-50%);
@@ -212,10 +201,8 @@
 
 .embla__prev {
   left: 10%;
-
 }
 
 .embla__next {
-  right:10%;
-
+  right: 10%;
 }
