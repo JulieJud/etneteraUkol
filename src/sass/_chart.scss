@@ -1,0 +1,213 @@
+.chartColour{
+  
+  background-color: var(--grey-section);
+  position:relative;
+}
+.chart__canvas {
+  @media screen and (min-width: 480px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media screen and (min-width: 780px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 170px;
+    padding-right: 170px;
+  }
+}
+.chart__title {
+  position:absolute;
+  right:40%;
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: 500;
+  @media screen and (min-width: 280px) {
+  top:0;
+    font-size: 16px;
+    line-height: 1;
+  }
+  @media screen and (min-width: 480px) {
+   top:2%;
+    font-size: 21px;
+    line-height: 1.2;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.2;
+    padding-left: 200px;
+    top:10%;
+  }
+}
+.chart__logo {
+  position: relative;
+}
+.chart__logo::before {
+  position: absolute;
+  content: '';
+  background-image: url('../images/svg/logoInGraf.svg');
+  background-repeat: no-repeat;
+  height: 0px;
+  width: 0px;
+
+  @media screen and (min-width: 480px) {
+    height: 0px;
+    width: 0px;
+  }
+  @media screen and (min-width: 780px) {
+    left: 6%;
+    bottom: 20%;
+    height: 50px;
+    width: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 50px;
+    width: 50px;
+    left: 6%;
+    bottom: 20%;
+    padding-right: 10px;
+  }
+}
+
+.chart__label {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 15px;
+
+  line-height: 1;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 9px;
+    line-height: 1;
+  }
+  @media screen and (min-width: 780px) {
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 10px;
+    line-height: 1;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+}
+
+.chart__label--low::before {
+  content: '';
+  background-image: url('../images/svg/elipsa2.svg');
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 10px;
+  margin-right: 2px;
+  display: inline-flex;
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    height: 15px;
+    width: 15px;
+    margin-right: 2px;
+  }
+  @media screen and (min-width: 780px) {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+  }
+}
+.chart__label--medium::before {
+  content: '';
+  background-image: url('../images/svg/elipsa3.svg');
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 10px;
+  margin-right: 2px;
+  display: inline-flex;
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+  }
+  @media screen and (min-width: 780px) {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+  }
+}
+.chart__label--hight::before {
+  content: '';
+  background-image: url('../images/svg/elipsa1.svg');
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 10px;
+  margin-right: 2px;
+  display: inline-flex;
+  align-items: center;
+
+  @media screen and (min-width: 480px) {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+  }
+  @media screen and (min-width: 780px) {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+  }
+}
+
+.chart__label::before {
+  position: absolute;
+
+  content: '';
+  background-image: url('../images/svg/clock.svg');
+  background-repeat: no-repeat;
+  height: 0px;
+  width: 0px;
+  @media screen and (min-width: 480px) {
+    height: 0px;
+    width: 0px;
+  }
+  @media screen and (min-width: 780px) {
+    height: 40px;
+    width: 40px;
+    left: 6%;
+    bottom: 170%;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 50px;
+    width: 50px;
+    left: 6%;
+    bottom: 150%;
+    padding-right: 10px;
+  }
+}

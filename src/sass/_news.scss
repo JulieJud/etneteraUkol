@@ -1,0 +1,60 @@
+.newColor{
+  background-color: var(--orange-color);
+}
+
+.news {
+  display: flex;
+  padding: 18px 5px;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-weight: normal;
+  letter-spacing: 0.005em;
+  color: var(--white-color);
+  
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+    padding: 18px 20px;
+  }
+  @media screen and (min-width: 780px) {
+    font-size: 12px;
+    padding: 18px 10px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 15px;
+    padding: 18px 200px;
+  }
+  &__title {
+    font-weight: normal;
+    font-size: 10px;
+    padding: 0px 15px;
+    @media screen and (min-width: 780px) {
+      font-size: 14px;
+      padding: 0px 100px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 15px;
+      padding: 0px 100px;
+    }
+  }
+
+  &__time {
+    text-transform: uppercase;
+    padding: 0px 15px;
+
+    @media screen and (min-width: 480px) {
+      font-size: 12px;
+      margin-right: 25px;
+    }
+  }
+  &__link {
+    padding: 0px 15px;
+    text-decoration: none;
+    color: var(--white-color);
+  }
+  @media screen and (min-width: 780px) {
+    font-size: 14px;
+  }
+}

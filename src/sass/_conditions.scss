@@ -1,0 +1,85 @@
+.conditions {
+  padding: 40px 10px;
+  background-color: var(--grey-section);
+}
+.conditions__title {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 780px) {
+    font-size: 21px;
+    line-height: 1;
+    font-weight: 400;
+  }
+}
+.conditions__title--who {
+  font-weight: 400;
+  margin-bottom: 10px;
+  @media screen and (max-width: 780px) {
+    font-size: 14px;
+    line-height: 1;
+  }
+}
+.conditions__list {
+  position: relative;
+  list-style: none;
+}
+.conditions__item {
+  margin-bottom: 20px;
+}
+.conditions__info {
+  font-weight: 400;
+  margin-bottom: 10px;
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  &--noMark {
+    padding-right: 0px;
+    padding-left: 40px;
+    margin-right: 30px;
+    width: 2600px;
+    @media screen and (max-width: 780px) {
+      padding-left: 0px;
+    }
+  }
+  &--mark {
+    padding-right: 40px;
+  }
+}
+.conditios__container {
+  display: flex;
+  align-items: baseline;
+
+  @media screen and (max-width: 780px) {
+    flex-wrap: wrap;
+  }
+}
+
+.conditions__list--noMark::before {
+  content: '';
+  background-image: url(../images/svg/iconsCheckmark.svg);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+
+  margin-right: 9px;
+  padding-left: 0;
+
+  position: absolute;
+  left: 0;
+}
+.conditions__list--mark {
+  counter-reset: num;
+}
+.conditions__item--mark::before {
+  content: counter(num) '. ';
+  counter-increment: num;
+  color: var(--orange-color);
+  margin-right: 9px;
+
+  position: absolute;
+  left: 0;
+}

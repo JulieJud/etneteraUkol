@@ -1,0 +1,121 @@
+.benefits {
+    padding-top:30px;    
+    @media screen and (min-width:1280px) {
+        padding:150px;
+        padding-bottom:30px;
+    }
+
+&__list{
+    margin: 0;
+    padding: 0;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -40px;
+        margin-left: -40px;
+    }
+}
+
+&__item {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    border-radius:5px;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    background-color:var(--white-color);
+    @media screen and (max-width: 767px){
+        margin-bottom: 40px;
+        
+    }
+    @media screen and (min-width: 768px) {
+        margin-top: 40px;
+        margin-left: 40px;
+        flex-basis: calc(100% / 2 - 40px);
+    }
+    @media screen  and (min-width: 1280px) {
+        margin-top: 40px;
+    margin-left: 40px;
+  
+    flex-basis: calc((100% - 120px) / 3)
+    }        
+    }
+&__item:hover,
+&__item:focus{
+    background-color:var(--black-color);
+    color:var(--white-color);
+     -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+transition: background-color 500ms linear, transform 500ms ease-in-out;
+
+}
+
+&__title {
+font-weight: 700;
+text-align:center;
+line-height: 1.15;
+padding:30px 30px 30px;
+    
+@media screen and (min-width:480px) {
+  padding:30px 30px 30px;
+    
+}
+
+
+@media screen and (min-width:768px) {
+   font-size: 28px;
+    
+}
+@media screen and (min-width:1280px) {
+   font-size: 38px;
+   padding:10px;
+
+    
+}
+}
+
+ &__text {
+margin-top: 0;
+margin-bottom: 0;
+line-height: 1.2;
+font-weight: 400;
+ padding:0 20px 150px;
+    
+text-align:centre;
+@media screen and (min-width:480px) {
+  padding:0 60px 150px;
+    
+}
+
+@media screen and (min-width:768px) {
+   font-size: 18px;
+    
+}
+@media screen and (min-width:1280px) {
+  font-size: 20px;
+ padding:0 20px 150px;
+    
+    
+}
+    }
+&__publication{
+    display:flex;
+    justify-content:space-between;
+    padding:0 20px 20px;
+}
+&__time{
+text-transform: uppercase;
+font-family: 'Myriad Pro';
+font-size: 13px;
+line-height: 24px;
+font-weight: 400;
+
+}
+&__link{
+text-decoration:none;
+color:var(--orange-color);
+font-family: 'Myriad Pro';
+font-size: 16px;
+line-height: 24px;
+font-weight: 600;
+}
+}

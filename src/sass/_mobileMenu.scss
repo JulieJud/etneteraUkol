@@ -1,0 +1,90 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 28px;
+  padding-left: 40px;
+  padding-bottom: 200px;
+  padding-right: 40px;
+  z-index: 2000;
+
+  background-color: var(--mobile-background);
+  transform: translateX(300%);
+  transition: transform 250ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+  opacity: 0;
+
+  @media screen and (max-width: 480px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.menu-toggle--mobile {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 38px;
+  right: 19px;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  fill: var(--white-color);
+
+  &:hover,
+  &:focus {
+    fill: var(--orange-color);
+  }
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-menu__link {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.8;
+
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: var(--orange-color);
+  }
+
+  &--current {
+    color: var(--orange-color);
+  }
+}
+
+.logo-mobile {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: block;
+}

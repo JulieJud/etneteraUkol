@@ -1,0 +1,64 @@
+.aboutColor{
+  background-color: var(--grey-section);
+
+}
+.about {
+  padding: 40px 10px;
+  
+  &__title {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--black-color);
+    margin-bottom: 5px;
+    @media screen and (min-width: 280px) {
+      font-size: 18px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 480px) {
+      font-size: 21px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 36px;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+  }
+
+  &__text {
+    line-height: 23px;
+    font-weight: 400;
+    color: var(--black-color);
+
+    @media screen and (min-width: 280px) {
+      align-items: center;
+      font-size: 12.3px;
+    }
+    @media screen and (min-width: 400px) {
+      align-items: center;
+      font-size: 14.3px;
+    }
+    @media screen and (min-width: 780px) {
+      font-size: 15.2px;
+    }
+  }
+
+  &__image {
+    float: left;
+    margin: 0px 24px 28px 0;
+    @media screen and (max-width: 480px) {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: var(--orange-color);
+  }
+}
+
+.myButton {
+  border-bottom: 2px dashed var(--orange-color);
+}

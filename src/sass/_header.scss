@@ -1,0 +1,121 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2.5%;
+  right: 10%;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    fill: var(--orange-color);
+  }
+  @media (max-width: 300px) {
+    right: 2%;
+  }
+
+  @media (min-width: 780px) {
+    display: none;
+    top: 4%;
+  }
+}
+
+.site-nav {
+  margin-right: 20px;
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  & &__item + &__item {
+    margin-left: 30px;
+  }
+
+  & &__link {
+    position: relative;
+    text-decoration: none;
+    display: block;
+
+    padding-bottom: 6px;
+    color: var(--dark-text);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.2;
+      @media screen and (min-width: 780px) {
+     font-size: 12px;
+  }
+      @media screen and (min-width: 1280px) {
+     font-size: 18px;
+  }
+  }
+
+  & &__link:focus,
+  & &__link:hover {
+    color: var(--orange-color);
+  }
+
+  & &__link--current {
+    color: var(--orange-color);
+  }
+  & &__link--current::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    display: block;
+    background-color: var(--orange-color);
+    height: 2px;
+    border-radius: 2px;
+  }
+}
+
+.logo {
+  padding: 15px 30px;
+  display: block;
+  text-decoration: none;
+  @media (max-width: 300px) {
+    padding-left: 10px;
+    margin: 0;
+  }
+    @media (min-width: 1279px) {
+    justify-content: space-around;
+     padding:0;
+     margin-left:25%;
+  }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+
+  @media (max-width: 767px) {
+   justify-content: space-between;
+     padding-top: 0px;
+  padding-bottom: 0px;
+  }
+
+  @media (min-width: 1279px) {
+    justify-content: space-between;
+    padding-top: 28px;
+  padding-bottom: 28px;
+  }
+}
