@@ -1,0 +1,1 @@
+{"version":3,"sources":["tippy.js"],"names":["tippy","content","trigger"],"mappings":";AAAAA,MAAM,YAAa,CACjBC,QAAS,YACTC,QAAS","file":"tippy.68c2d92d.js","sourceRoot":"../src","sourcesContent":["tippy('.myButton', {\n  content: 'hustý,co?',\n  trigger: 'click',\n});\n"]}
