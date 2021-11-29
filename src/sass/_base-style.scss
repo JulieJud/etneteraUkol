@@ -17,7 +17,6 @@ body {
   font-size: 16px;
   line-height: 1.43;
   letter-spacing: 0.08em;
- 
 }
 
 h1,
@@ -53,11 +52,12 @@ img {
   padding: 0;
   margin: 0;
 }
-#topcontrol{z-index: 9999;}
+#topcontrol {
+  z-index: 9999999;
+}
 #topcontrol {
   margin-bottom: 50px;
   margin-right: 40px;
   background-color: white;
   border-radius: 40%;
-
 }
