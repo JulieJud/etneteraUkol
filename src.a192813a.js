@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/hero@1X.png":[["hero@1X.6e4085d8.png","PUSh"],"PUSh"],"./../images/hero@2X.png":[["hero@2X.d616775d.png","sJVG"],"sJVG"],"./../images/svg/logoInGraf.svg":[["logoInGraf.ac92a421.svg","FqEi"],"FqEi"],"./../images/svg/elipsa2.svg":[["elipsa2.846dbff2.svg","bDMj"],"bDMj"],"./../images/svg/elipsa3.svg":[["elipsa3.d8733cda.svg","Aez8"],"Aez8"],"./../images/svg/elipsa1.svg":[["elipsa1.77782e07.svg","xIh6"],"xIh6"],"./../images/svg/clock.svg":[["clock.64e95154.svg","ktA3"],"ktA3"],"./../images/svg/iconsCheckmark.svg":[["iconsCheckmark.90f02952.svg","uv6N"],"uv6N"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/etneteraUkol/src.4d7969a8.js.map
+//# sourceMappingURL=/etneteraUkol/src.a192813a.js.map
